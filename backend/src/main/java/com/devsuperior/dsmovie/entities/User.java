@@ -17,12 +17,13 @@ public class User {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	private String Email;
-	public User(Long id, String email) {
-		
+	private String email;
+	public User(Long id, String email) {		
 		this.id = id;
-		Email = email;
+		this.email = email;
 	}
+	
+	
 	public Long getId() {
 		return id;
 	}
@@ -30,10 +31,10 @@ public class User {
 		this.id = id;
 	}
 	public String getEmail() {
-		return Email;
+		return email;
 	}
 	public void setEmail(String email) {
-		Email = email;
+		email = email;
 	}
 	
 	

@@ -5,7 +5,7 @@ import org.springframework.stereotype.Repository;
 
 import com.devsuperior.dsmovie.entities.Score;
 import com.devsuperior.dsmovie.entities.ScorePK;
-@Repository
+
 public interface ScoreRepository extends JpaRepository<Score, ScorePK> {
 
 }
